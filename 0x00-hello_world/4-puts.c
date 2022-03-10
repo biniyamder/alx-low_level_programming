@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
-void main()
+int main (void)
 { 
-	char str1[50];
+	char str1[51];
 	
 	strcpy(str1, "Programming is like building a multilingual puzzle");
 	
