@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int main (void)
+void main()
 { 
 	char str1[50];
 	
