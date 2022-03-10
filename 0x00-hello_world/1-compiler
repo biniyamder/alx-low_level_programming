@@ -1,2 +1,2 @@
 #!/bin/bash
-CL /c 0-main.c 0-main.o
+CL /c 0-main.c 1-main.c 0-main.o
