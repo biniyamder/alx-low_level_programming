@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	int n = 0X'0';
-	char ch = 0X'a';
+	int n = 0X0;
+	char ch = 0Xa;
 	
 	for (n = '0'; n <= 10; n++)
 	{
