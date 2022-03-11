@@ -13,8 +13,8 @@ int main(void)
 	{
 		putchar(ch);
 		i = toupper(ch);
-		putchar(i);
 	}
+	putchar(i);
 	putchar ('\n');
 	return (0);
 }
