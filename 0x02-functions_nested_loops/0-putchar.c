@@ -2,7 +2,10 @@
 
 int main (void)
 {
-	char c ="_putchar";
-	putchar(c);
+        char c ="_putchar";
+        putchar(c);
 return(0)
 }
+~
+~
+
