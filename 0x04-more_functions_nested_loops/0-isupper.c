@@ -7,7 +7,7 @@
  */
 int _isupper(int c)
 {
-	char c = 'A';
+	char c;
 	
 	if (isupper(c))
 	{
