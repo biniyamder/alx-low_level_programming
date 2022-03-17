@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "1-main.c"
+#include "main.h"
 
-int(print_alphabet)
+int main(void)
 {
 	int a = (97);
 	for (a=97; a<=122; a++)
 		putchar(a);
 	putchar('\n');
-	return 0;
+	return (0);
 }
