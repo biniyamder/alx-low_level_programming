@@ -7,14 +7,12 @@
  */
 int _isupper(int c)
 {
-	char c;
-	
 	if (isupper(c))
 	{
-		putchar(49);
+		return (1);
 	}
 	else
 	{
-		putchar(48);
+		return (0);
 	}
 }
