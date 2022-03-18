@@ -3,11 +3,11 @@
 /*
  * _isupper -  function that checks for uppercase character
  *
- * Return: 0,1
+ * Return: Always 0
  */
 int _isupper(int c)
 {
-	if (isupper(c))
+	if (c >= 'A' && c <= 'z')
 	{
 		return (1);
 	}
