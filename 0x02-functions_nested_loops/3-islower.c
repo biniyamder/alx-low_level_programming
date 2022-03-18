@@ -7,12 +7,14 @@
  */
 int _islower(int c)
 {
-	if (c = 'a'; c <= 'z'; c++)
+	char c;
+
+	if(islower(c))
 	{
-		putchar("1");
+		putchar(49);
 	}
 	else
 	{
-		putchar("0");
+		putchar(48);
 	}
 }
