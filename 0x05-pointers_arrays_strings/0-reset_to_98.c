@@ -1,5 +1,5 @@
 #include <stdio.h>
-#incilude "main.h"
+#include "main.h"
 /**
  * reset_to_98 - a pointer to an int a parameter
  *
@@ -11,7 +11,7 @@ void reset_to_98(int *n)
 	int s = 98;
 	int *n;
 
-	in = &s;
+	n = &s;
 
 	putchar(*in);
 
