@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * puts_half - prints half of a string
+ * print_array - prints n elements of an array of integers
  *
  * @a: first integer
  * @n: second integer
