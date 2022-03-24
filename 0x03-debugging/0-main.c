@@ -2,7 +2,8 @@
 #include "main.h"
 /**
  * main - test if function print positive or negative integer
- * Return: Always 0
+ *
+ * Return: 0
  */
 int main(void)
 {
