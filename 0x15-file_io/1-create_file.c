@@ -1,43 +1,31 @@
 #include "main.h"
-
 /**
-  * create_file - ...
-  * @filename: ...
-  * @text_content: ...
-  *
-  * Return: ...
-  */
+ * create_file - create a file with read/write access for user
+ * @filename: name of file to create
+ * @text_content: string to write to file
+ * Return: 1 on success, -1 on failure
+ */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
+int fd, rstatus, i;
 
-	if (!filename)
-		return (-1);
+if (filename == NULL)
+	return (-1);
 
-	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (fd == -1)
-		return (-1);
+fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 
-	if (text_content)
-		write(fd, text_content, _strlen(text_content));
+if (fd == -1)
+	return (-1);
 
-	close(fd);
-	return (1);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(char *s)
+if (text_content)
 {
-	int c = 0;
-
-	while (s[c])
-		c++;
-
-	return (c);
+	for (i = 0; text_content[i] != '\0'; i++)
+		;
+	rstatus = write(fd, text_content, i);
+	if (rstatus == -1)
+		return (-1);
 }
 
+close(fd);
+return (1);
+}
